@@ -1,0 +1,29 @@
+{
+  "template_dir": "templates", 
+  "content_dir": "contents",
+  "output_dir": "output",
+
+  "server": { 
+    "port": 9009
+  },
+
+  "bundles": {
+    "/js/all.js": [
+      "/lib/jquery/jquery.js",
+      "/js/site.coffee"
+    ],
+    "/css/all.css": [
+      "/css/normalize.css",
+      "/css/main.css",
+      "/css/hoge.styl"
+    ]
+  },
+
+  "plugins": {
+
+    "compilers": {
+      ".css": "punch-stylus-compiler" 
+    }
+
+  }
+}

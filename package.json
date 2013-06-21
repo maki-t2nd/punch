@@ -1,0 +1,19 @@
+{
+  "name": "mySite",
+  "version": "0.0.0",
+  "description": "hogehoge",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "punch-sass-compiler": "~0.0.3",
+    "grunt-bower-task": "~0.2.3",
+    "punch-stylus-compiler": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
