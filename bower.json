@@ -2,6 +2,22 @@
   "name": "mySite",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "1.9.1"
+    "jquery": "~1.8.3",
+    "jquery.cookie": "*",
+    "jquery-easing": "*",
+    "underscore": "~1.4.4",
+    "heightLine": "http://blog.webcreativepark.net/sample/js/18/heightLine.js",
+    "requirejs": "*"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "": "*.js"
+    },  
+    "requirejs": {
+      "": "require.js"
+    },
+    "underscore": {
+      "": "underscore*.js"
+    }
   }
 }

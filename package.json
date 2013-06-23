@@ -1,8 +1,6 @@
 {
   "name": "mySite",
   "version": "0.0.0",
-  "description": "hogehoge",
-  "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "~0.4.1",
     "punch-sass-compiler": "~0.0.3",

@@ -4,10 +4,10 @@ module.exports = function (grunt) {
       install: {
         options: {
           targetDir: './templates/lib', //ライブラリの配置先のディレクトリ
-          layout: 'byType',
+          layout: 'byComponent',
           install: true, //grunt実行時にbower installを実行するかどうか
           verbose: false, // ログの詳細を出すかどうか
-          cleanTargetDir: false, // targetDirを削除するかどうか
+          cleanTargetDir: true, // targetDirを削除するかどうか
           cleanBowerDir: false // bowerのcomponentsディレクトリを削除するかどうか
         }
       }
