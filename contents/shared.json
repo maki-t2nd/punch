@@ -1,15 +1,8 @@
 {
-	"site-title": "Welcome!",
-	"footer-text": "Built with <a href=\"http://laktek.github.com/punch\">Punch</a>",
-	"navbar": [
-    {
-      "label": "hoge",
-      "href": "/hoge/"
-    },
-    {
-      "label": "fuga",
-      "href": "/fuga/"
-    }
-
-	]
+  "site-title": "サイト名",
+  "domain": "http://hogehoge.com/",
+  "description": "サイト概要",
+  "keywords": "サイト,キー,ワード",
+  "viewport": "width=device-width",
+  "gaCode": "**-*****-**"
 }

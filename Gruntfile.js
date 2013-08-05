@@ -3,15 +3,38 @@ module.exports = function (grunt) {
     bower: {
       install: {
         options: {
-          targetDir: './templates/lib', //ライブラリの配置先のディレクトリ
+          targetDir: './templates/lib',
           layout: 'byComponent',
-          install: true, //grunt実行時にbower installを実行するかどうか
-          verbose: false, // ログの詳細を出すかどうか
-          cleanTargetDir: true, // targetDirを削除するかどうか
-          cleanBowerDir: false // bowerのcomponentsディレクトリを削除するかどうか
+          install: true,
+          verbose: false,
+          cleanTargetDir: true,
+          cleanBowerDir: false
         }
       }
     },
+    compass: {
+      dist: {
+        options: {
+          sassDir: 'templates/sass',
+          cssDir: 'templates/css'
+          // config: 'templates/config.rb'
+        }
+      }
+    },
+    watch: {
+      options: {
+        livereload: true
+      },
+      html: {
+        files: '**/*.mustache'
+      },
+      css: {
+        files: '**/*.scss',
+        tasks: ['compass']
+      }
+    }
   });
   grunt.loadNpmTasks('grunt-bower-task');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 };

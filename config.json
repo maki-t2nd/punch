@@ -10,20 +10,22 @@
   "bundles": {
     "/js/all.js": [
       "/lib/jquery/jquery.js",
-      "/js/site.coffee"
+      "/lib/jquery.smooth-scroll/jquery.smooth-scroll.js",
+      "/lib/heightLine/index.js",
+      "/js/site.js"
     ],
     "/css/all.css": [
-      "/css/normalize.css",
-      "/css/main.css",
-      "/css/hoge.styl"
+      "/css/site.css"
     ]
   },
 
-  "plugins": {
+  "asset_bundling": {
+    "fingerprint": false
+  },
 
-    "compilers": {
-      ".css": "punch-stylus-compiler" 
-    }
-
+  "generator": {
+    "skip_paths": [
+       "/sass*"
+    ]
   }
 }
